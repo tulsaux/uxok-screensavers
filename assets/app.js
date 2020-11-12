@@ -1,6 +1,21 @@
 	(function() {
 		// all your code here
 		var countDownDate = new Date("Nov 12, 2020 9:00:00").getTime();
+		var dateNow = new Date().getTime();
+		var wellBeText = "We'll be starting in ";
+
+		function addMinutes(date, minutes) {
+		    return new Date(date + minutes*60000);
+		}
+
+		if (location.hash) {
+			console.log(dateNow);
+			var hash = location.hash.substr(1);
+			countDownDate = addMinutes(dateNow, hash)
+			wellBeText = "We'll be back in "; 
+		}
+
+
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -18,7 +33,7 @@
 			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 			// Display the result in the element with id="demo"
-			document.getElementById("timer").innerHTML = "We'll be starting in " + minutes + ":" + seconds;
+			document.getElementById("timer").innerHTML = wellBeText + minutes + ":" + seconds;
 
 			// If the count down is finished, write some text
 			if (distance < 0) {
