@@ -1,3 +1,3 @@
-- [/starting](starting.html)
-- [/brb](brb.html)
-- [/thanks](thanks.html)
+- [/starting](starting/)
+- [/brb](brb/)
+- [/thanks](thanks/)
