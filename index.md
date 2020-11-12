@@ -1,3 +1,4 @@
 - [/starting](starting/)
+- [/countdown](countdown/)
 - [/brb](brb/)
 - [/thanks](thanks/)
