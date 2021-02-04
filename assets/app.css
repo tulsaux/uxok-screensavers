@@ -75,11 +75,15 @@ Resources1× 0.5× 0.25×Rerun
 }
 
 .white-bg {
+	display: block;
+	width: 100%;
 	margin-top: 2rem;
+	position: relative;
 }
 
 .white-bg::after {
 	content: "";
+	top: 0;
 	left: 0;
 	position: absolute;
 	background: rgba(255,255,255,0.15);
@@ -101,8 +105,10 @@ Resources1× 0.5× 0.25×Rerun
 }
 
 .text h2 {
-	display: inline-block;
+	text-align: center;
+	display: block;
 	font-size: 4em;
+	width: 100%;
 	/* background: rgba(255,255,255,0.25); */
 	padding-top: 2rem;
 	color: white;

@@ -1,18 +1,18 @@
 	(function() {
 		// all your code here
-		var countDownDate = new Date("Nov 12, 2020 9:00:00").getTime();
+		var countDownDate = new Date("Feb 5, 2021 9:00:00").getTime();
 		var dateNow = new Date().getTime();
 		var wellBeText = "We'll be starting in ";
 
 		function addMinutes(date, minutes) {
-		    return new Date(date + minutes*60000);
+			return new Date(date + minutes * 60000);
 		}
 
 		if (location.hash) {
 			console.log(dateNow);
 			var hash = location.hash.substr(1);
 			countDownDate = addMinutes(dateNow, hash)
-			wellBeText = "We'll be back in "; 
+			wellBeText = "We'll be back in ";
 		}
 
 
